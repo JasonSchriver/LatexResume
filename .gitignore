@@ -1,4 +1,7 @@
+## To avoind adding my signature to repo, but keep it available for PDF generation
+signature.png
 ## Core latex/pdflatex auxiliary files:
+
 *.aux
 *.lof
 *.log
