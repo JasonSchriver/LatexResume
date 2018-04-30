@@ -1,0 +1,109 @@
+\documentclass[a4paper,10pt]{article}
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage[cm]{fullpage}
+\usepackage{supertabular} 				%for Grades
+\usepackage{tabularx}
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+%%-------------WATERMARK TEST [**not part of a CV**]---------------
+%\usepackage[absolute]{textpos}
+%
+%\setlength{\TPHorizModule}{30mm}
+%\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%\setlength{\parindent}{0pt}
+%
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+{\begin{center}
+\textsc		{\Large Jason Schriver}
+\end{center}}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\hrule
+%FROM:
+\begin{tabularx}{\textwidth}{X|X}
+	201 Betz Rd, Apt. 537 & \href{https://jasonschriver.me}{jasonschriver.me} \cr
+	Cheney, WA 99004 & \raggedright \href{https://linkedin.com/in/JasonSchriver}{LinkedIn.com/in/JasonSchriver} \cr
+	509-638-9713 & \raggedright \href{mailto:jschriver@eagles.ewu.edu}{jschriver@eagles.ewu.edu} \cr
+\end{tabularx}
+%TO:
+\\
+\today\\
+\\
+Mr. J. Tim Willis\\
+Service Center Supervisor - Department of Information Technology\\
+Eastern Washington University\\
+102 Huston Hall\\
+Cheney, WA 99004
+
+\section{Dear Tim:}
+
+%Par 1:
+
+%Par 2:
+
+%Par 3:
+
+%Signature
+Sincerely,\\
+\includegraphics[scale=.25]{signature}\\
+Jason Schriver
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
