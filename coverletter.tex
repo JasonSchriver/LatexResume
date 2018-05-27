@@ -1,0 +1,163 @@
+\documentclass[a4paper,10pt]{article}
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage[cm]{fullpage}
+\usepackage{supertabular} 				%for Grades
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+%%-------------WATERMARK TEST [**not part of a CV**]---------------
+%\usepackage[absolute]{textpos}
+%
+%\setlength{\TPHorizModule}{30mm}
+%\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%\setlength{\parindent}{0pt}
+%
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+{\begin{center}
+\textsc		{\Large Jason Schriver}
+\end{center}}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+%FROM:
+\section{Contact Information:}
+\begin{tabular}{rl}
+    \textsc{Address:}   & 201 Betz Rd \#537, Cheney, WA 99004 \\
+    \textsc{Phone:}     & 509-638-9713\\
+    \textsc{Email:}     & \href{mailto:jschriver@eagles.ewu.edu}{jschriver@eagles.ewu.edu}\\
+    \textsc{LinkedIn:}  & \href{https://linkedin.com/in/JasonSchriver}{https://linkedin.com/in/JasonSchriver}\\
+    \textsc{Website:}   & \href{https://jasonschriver.me}{https://jasonschriver.me}
+\end{tabular}
+%TO:
+\section{}
+
+May 3\super{rd}, 2018
+\par
+
+Mr. J. Tim Willis\\
+Service Center Supervisor - Division of Information Technology\\
+Eastern Washington University\\
+102 Huston Hall\\
+Cheney, WA 99004\\
+
+Re: Help Desk Support Technician Position (Posting \#: 2018026CP)\\
+
+Dear Mr. Willis:\\
+
+\par
+%Par 1:
+I am pleased to offer over five years of documented and real world experience in the IT Industry, and several more years of personal experience working with technology and customers. Furthermore, I am thrilled that your department is seeking to employ a Help Desk Specialist, as I feel that this is the ideal environment to continue improving my technical and customer service skills at the University that I am proud to call my home. Currently, I am an IT Professional Assistant at Eastern Washington University where I am entrusted with many responsibilities: I respond to Help Desk requests for equipment repair with a notably fast response rate, usually responding to tickets just after they enter my queue; I interact with vendors online and by phone to coordinate repair services; and I install and configure software in-person and via the remote support tool, Bomgar. I am well-versed in the different ways that services can be provided to clients and I'm always eager to jump on a task and make sure it is completed effeciently and correctly the first time. 
+\par
+%Par 2:
+In addition to this position, I am the Help Desk Student Lead at EWU. While working in this position, I have cultivated my management skills through the hiring, training and scheduling of as many as ten student employees, many of whom receive consistent positive customer service rankings from our clients. I have worked alongside supervisors to create reports, analyze data and provide crucial student perspective to choices made in the department. This position also requires a familiarity with Cisco IP Phones; more specifically I am versed in Cisco Unity Connection, Cisco Call Manager and Cisco Agent Desktop. Using my knowledge of these systems, I am able to accept calls, transfer calls to the appropriate department, run reports on call queue data to analyze peaks and valleys in call volume and analyze data about these calls. I have also become familiar with changing display names, adding lines and changing speed dials on Cisco IP Phones. I also have used my experience with these systems to provide usability training to employees.
+\par
+%Par 3:
+I also possess certificates from the College Reading and Learning Association that show my proficiency in tutoring others; this skill is critical in the customer service industry Because of this certification, I am able to bring complicated concepts down to an understandable level. This helps my clients understand the problems that are happening so that they may not occur in the future. I am currently studying to attain a BA in Spanish which has required me to consistently work in diverse groups to reach an end product. I have also taken Education courses that helped me cultivate my skills in instruction. In addition to these certifications, I am currently studying to take CompTIA's A+ exam which I believe will further strengthen the skills I currently possess.\\
+\par
+As you move to the next page, please see I meet, and often exceed, the requirements of your posting, guaranteeing that I will be a strong asset to your team.\\
+\pagebreak
+\section{Summary of Qualifications Related to Posting}
+\begin{longtable}{|p{.35\linewidth}|p{.6\linewidth}|}
+	\textbf{Requirement} & \textbf{How I Meet the Requirement}\\
+	&\\
+	One year of formal training/education in the field of information technology, computer science, or related field preferred or equivalent applicable experience, specifically supporting client-side systems, applications, and client-related technologies. 
+	& I possess nearly four years of part-time work in the Information Technology Departments at Eastern Washington University and the University of Washington. Both postions required me to support software and hardware for computer systems belonging to faculty, staff and students. I also have taken Introductory Programming (Java I and II) courses as well as self-taught experience in Python programming. \\
+	&\\
+	CompTIA A+ Certification required within six (6) months of hire (CompTIA Network+, CCENT, or CCNA may be substituted)
+	& I am currently studying for CompTIA A+ Certification. If brought on to your team, I intend to take the certification exam well ahead of the six month requirement stated. I would also be very open to obtaining further education and experience to expand my knowledge about the IT world.\\
+	&\\
+	Basic knowledge of TCP/IP with emphasis on basic functionality, to include common client-side protocols and their proper configuration. 
+	& I am familiar with command-line network diagnostic tools on PC, Mac and Linux comptuer systems. I have experience in setting Static IP Configurations for various printer models and computers and am adept at gathering information needed to set DHCP Reservations. I have a working knowledge of many of the standard TCP and UDP ports used for various services.\\
+	&\\
+	Experience working with Help Desk software applications, which includes following pre-defined workflow and business processes.
+	& I am well-versed in Best Practical's Request Tracker, Web Help Desk, and ServiceNow through my professional experience. I am skilled at creating and routing requests to the proper groups within IT. I am also familiar with how to run reports in ServiceNow and putting that data together in a visually appealing fashion. I have also configured my own version of osTicket, an open source ticketing system, on my own webserver. \\
+	&\\
+	Two years experience working with and supporting computers, software, printers, telephony, enhanced classroom technologies, and network devices.
+	& I have over four years of formal experience supporting these types of systems for clients through my professional experience at EWU, UW and in running my own Computer Repair company which I operated during my time in high school. I have a proven track record with computers, software and printers through my Help Desk and IT Professional Assistant positions. Additionally, I have troubleshot and supported enhanced classroom systems with the assistance of the Infrastructure Systems Specialist and am familiar with AMX and Extron systems. Furthermore, I am skilled in network infrastructures including the activation and changing of ports in networking closets. \\
+	&\\
+	Basic knowledge of Windows and Macintosh operating systems.
+	& I own both Windows and Mac computers and have intimate knowledge of their operating systems. I have used every version of Microsoft Windows spanning from 95-10, with emphasis in Windows 7, 8, and 10. I have owned a Mac for 7 years and have used and customized it extensively.\\
+	&\\
+	Experience working with and supporting Microsoft business productivity applications, e.g. Office 2013/2011/2016,Visio, OneNote, Project, etc.
+	& I have gained a deep understanding of the Microsoft Office Suite and its collaboration functionalities through my coursework at EWU. Through team projects and classes that require specially-formatted documents, PowerPoint presentations and Excel-based lab reports, my knowledge about Office products has increased substantially. In my professional career, I have also prepared and maintained excellent documentation in a consistent format for procedures and created a scheduling template in Excel which automatically counts hours allocated based on shading in cells. Additionally, I am working toward becoming a Microsoft Office Specialist through the program offered at EWU.\\
+	&\\
+	Experience working with and supporting Adobe software applications, e.g. Adobe Acrobat, Photoshop, Illustrator, InDesign, etc.
+	& One of my favorite hobbies is photography. In order to create visually appealing scenes, I have learned to use Adobe Lightroom and Photoshop to edit and enhance photos. I have used Adobe Acrobat Pro to combine, edit, and design PDF files for work and personal purposes. Additionally, I have gained a working knowledge of InDesign in designing and editing multiple flyers for club events and for Help Desk services.\\
+	&\\
+	Background in customer service and excellent problem solving skills.
+	& I have worked in customer service in various capacities for several years. One of my most interesting experiences has been as a Security Ambassador with Crowd Management Services where I faced many disgruntled, inebriated and otherwise difficult guests. This unique experience has helped me to gain patience and problem solving skills to keep patrons happy. I have also worked in an IT setting providing excellent customer service while constantly thinking on my feet to provide an effective solution in a short amount of time. My CRLA training certifications also show that I have experience working with diverse groups in enhancing their understanding of various topics.\\
+	&\\
+	Candidate must demonstrate interest, ability and/or experience promoting cultural competency, universal accessibility and/or diversity.
+	& I strongly believe that all humans are created equal, and no inherent quality should deem somebody unworthy of being their best self. I am currently taking EDUC 325: Inequalities and Impacts on Education which has widened my world-view and increased my awareness of ways that certain groups are systematically opressed. Additionally, I completed Title IX Harrassment Training through Eastern Washington University. The course content was very eye-opening to me and showed me ways that individuals can act unintentionally that harm others. These experiences are critical in the development of my perceptions and have made me more aware of the biases in our world. I hope that I can do my part to allow for all persons to accomplish their dreams.\\
+	&\\
+	Higher Education Experience & I have several years of experience in Higher Education as a student, employee and a campus ambassador. I am Secretary and Treasurer of the EWU Astronomy Club which has recently received the \textit{University Ambassador} Student Leadership and Excellence Award for our organization of a viewing party for the Solar Eclipse in Summer of 2017.\\
+	&\\
+	
+\end{longtable}
+\par
+In closing, I believe that my unique blend of experiences have prepared me to be the perfect candidate to be your IT Help Desk Support Technician. Please contact me by phone at 509-638-9713 or by email at jschriver@eagles.ewu.edu to schedule an interview or if I can answer any additional questions or concerns. I look forward to speaking to you soon!
+\par
+%Signature
+Sincerely,\\
+\includegraphics[scale=.25]{signature}\\
+Jason Schriver
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
